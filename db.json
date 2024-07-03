@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "b7f8",
+      "nombre": "Pelota de Volleyball",
+      "precio": 23.65,
+      "imagen": "https://www.walon.com.pe/web/image/product.image/23794/image_1024/PELOTA%20VOLEY%20PVINPU5007A?unique=12c238b"
+    },
+    {
+      "id": "2491",
+      "nombre": "Mario Bros",
+      "precio": 17,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_709717-MPE71110758078_082023-O.webp"
+    },
+    {
+      "id": "7e69",
+      "nombre": "Sonic ",
+      "precio": 15,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IVoZ1jze2Dn1wr0d3_4lKe1btkvDae2vJQ&s"
+    },
+    {
+      "id": "b806",
+      "nombre": "Camiseta Perras On The Beach",
+      "precio": 19.3,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_761535-MLA26932938957_022018-O.webp"
+    }
+  ]
+}

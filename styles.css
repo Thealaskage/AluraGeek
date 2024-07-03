@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('fonts/pixelfont.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "ＭＳ Ｐゴシック", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ＭＳ Ｐゴシック", Arial, sans-serif; /* Asegura que la fuente se aplique al body */
+}
+
+header {
+    background-color: #8000ff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "ＭＳ Ｐゴシック"; /* Esta línea puede ser opcional si ya está en * */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.productos, .formulario {
+    width: 45%;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+.productos-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.producto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.producto-card p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8000ff;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+    color: black;
+}
+
+button:hover {
+    background-color: #5a00cc;
+}
+
+footer {
+    background-color: #8000ff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Estilos mejorados para el formulario */
+.formulario h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="url"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="number"]:focus,
+.formulario input[type="url"]:focus {
+    outline: none;
+    border-color: #8000ff;
+    box-shadow: 0 0 5px rgba(128, 0, 255, 0.5);
+}
+
+.formulario button[type="submit"] {
+    background-color: #8000ff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #5a00cc;
+}
+
+.formulario button[type="reset"] {
+    background-color: #ccc;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button[type="reset"]:hover {
+    background-color: #999;
+}
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos, .formulario {
+        width: 90%;
+    }
+
+    .productos-container {
+        max-height: 300px;
+    }
+}
